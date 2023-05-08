@@ -109,6 +109,10 @@
     }];
 }
 
+- (NSUInteger)outputBufferBytesAvailable {
+    return _outputBuffer.bytesAvailable;
+}
+
 #pragma mark - Initialization
 
 - (instancetype)initWithMode:(PSWebSocketMode)mode request:(NSURLRequest *)request {
